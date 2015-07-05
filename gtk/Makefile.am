@@ -125,6 +125,7 @@ gtk_public_h_sources = 		\
 	gtk-autocleanups.h	\
 	gtk-a11y.h		\
 	gtkaboutdialog.h	\
+	gtkabstractimage.h 	\
 	gtkaccelgroup.h		\
 	gtkaccellabel.h		\
 	gtkaccelmap.h		\
@@ -219,6 +220,7 @@ gtk_public_h_sources = 		\
 	gtkicontheme.h		\
 	gtkiconview.h		\
 	gtkimage.h		\
+	gtkimageview.h \
 	gtkimcontext.h		\
 	gtkimcontextinfo.h	\
 	gtkimcontextsimple.h	\
@@ -594,6 +596,7 @@ gtk_base_c_sources = 		\
 	gtksearchenginemodel.c	\
 	fnmatch.c		\
 	gtkaboutdialog.c	\
+	gtkabstractimage.c 	\
 	gtkaccelgroup.c		\
 	gtkaccellabel.c		\
 	gtkaccelmap.c		\
@@ -775,6 +778,7 @@ gtk_base_c_sources = 		\
 	gtkiconview.c		\
 	gtkimage.c		\
 	gtkimagedefinition.c	\
+	gtkimageview.c \
 	gtkimcontext.c		\
 	gtkimcontextsimple.c	\
 	gtkimmodule.c		\
