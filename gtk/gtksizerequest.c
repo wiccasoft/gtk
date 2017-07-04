@@ -299,12 +299,6 @@ gtk_widget_query_size_for_orientation (GtkWidget        *widget,
 	      min_baseline = -1;
 	      nat_baseline = -1;
 	    }
-	  else if (gtk_widget_get_valign (widget) != GTK_ALIGN_BASELINE)
-	    {
-	      /* Ignore requested baseline for non-aligned widgets */
-	      min_baseline = -1;
-	      nat_baseline = -1;
-	    }
           else if (min_baseline > nat_baseline)
             {
                g_warning ("%s %p reported a minimum baseline of %d and a natural baseline of %d."
