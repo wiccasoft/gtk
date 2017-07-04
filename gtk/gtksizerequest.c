@@ -305,6 +305,24 @@ gtk_widget_query_size_for_orientation (GtkWidget        *widget,
 	      min_baseline = -1;
 	      nat_baseline = -1;
 	    }
+          else if (min_baseline > nat_baseline)
+            {
+               g_warning ("%s %p reported a minimum baseline of %d and a natural baseline of %d."
+                          "Natural baselines must be >= minimum baselines",
+                          G_OBJECT_TYPE_NAME (widget), widget, min_baseline, nat_baseline);
+               min_baseline = -1;
+               nat_baseline = -1;
+            }
+          else if (min_baseline > reported_min_size ||
+                   nat_baseline > reported_nat_size)
+            {
+              g_warning ("%s %p reported baselines of minimum %d and natural %d, but sizes of "
+                         "minimum %d and natural %d. Baselines must be inside the widget size.",
+                         G_OBJECT_TYPE_NAME (widget), widget, min_baseline, nat_baseline,
+                         reported_min_size, reported_nat_size);
+              min_baseline = -1;
+              nat_baseline = -1;
+            }
 	  else
             {
               if (css_min_size > reported_min_size)
