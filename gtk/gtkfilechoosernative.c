@@ -213,7 +213,7 @@ G_DEFINE_TYPE_WITH_CODE (GtkFileChooserNative, gtk_file_chooser_native, GTK_TYPE
 
 /**
  * gtk_file_chooser_native_get_accept_label:
- * @self: a #GtFileChooserNative
+ * @self: a #GtkFileChooserNative
  *
  * Retrieves the custom label text for the accept button.
  *
@@ -232,7 +232,7 @@ gtk_file_chooser_native_get_accept_label (GtkFileChooserNative *self)
 
 /**
  * gtk_file_chooser_native_set_accept_label:
- * @self: a #GtFileChooserNative
+ * @self: a #GtkFileChooserNative
  * @accept_label: (allow-none): custom label or %NULL for the default
  *
  * Sets the custom label text for the accept button.
@@ -259,7 +259,7 @@ gtk_file_chooser_native_set_accept_label (GtkFileChooserNative *self,
 
 /**
  * gtk_file_chooser_native_get_cancel_label:
- * @self: a #GtFileChooserNative
+ * @self: a #GtkFileChooserNative
  *
  * Retrieves the custom label text for the cancel button.
  *
@@ -278,7 +278,7 @@ gtk_file_chooser_native_get_cancel_label (GtkFileChooserNative *self)
 
 /**
  * gtk_file_chooser_native_set_cancel_label:
- * @self: a #GtFileChooserNative
+ * @self: a #GtkFileChooserNative
  * @cancel_label: (allow-none): custom label or %NULL for the default
  *
  * Sets the custom label text for the cancel button.
